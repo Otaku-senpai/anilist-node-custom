@@ -1,0 +1,83 @@
+{
+  "_from": "anilist-node@^1.7.0",
+  "_id": "anilist-node@1.9.0",
+  "_inBundle": false,
+  "_integrity": "sha512-qzXKHMIMVMtTgxvEijQif4AnLHtvaGYJlzWIqPuBeyiDd8eb7bu2m0JyhzOS/T9T70yqoS/owcDFlW2GaDAMXw==",
+  "_location": "/anilist-node",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "anilist-node@^1.7.0",
+    "name": "anilist-node",
+    "escapedName": "anilist-node",
+    "rawSpec": "^1.7.0",
+    "saveSpec": null,
+    "fetchSpec": "^1.7.0"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/anilist-node/-/anilist-node-1.9.0.tgz",
+  "_shasum": "dd732bef5261193086df4b6047ef48e67ed4547c",
+  "_spec": "anilist-node@^1.7.0",
+  "_where": "/home/shelltear/bot/botcontrol",
+  "author": {
+    "name": "Frederick Katsura",
+    "email": "katsurinstudios@protonmail.ch"
+  },
+  "bugs": {
+    "url": "https://github.com/butterstroke/Anilist-Node/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "node-fetch": "^2.6.1"
+  },
+  "deprecated": false,
+  "description": "A lightweight Node.js wrapper for the AniList API",
+  "devDependencies": {
+    "docdash": "^1.2.0",
+    "eslint": "^7.26.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "husky": "^5.2.0",
+    "lint-staged": "^10.5.4",
+    "prettier": "^2.3.0",
+    "typescript": "^4.2.4"
+  },
+  "homepage": "https://github.com/butterstroke/Anilist-Node#readme",
+  "keywords": [
+    "anilist",
+    "api",
+    "anime",
+    "node.js"
+  ],
+  "license": "MIT",
+  "lint-staged": {
+    "*.{html,css,js,json,jsx}": [
+      "prettier --write",
+      "eslint --fix --quiet"
+    ]
+  },
+  "main": "./lib/index.js",
+  "name": "anilist-node",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/butterstroke/Anilist-Node.git"
+  },
+  "scripts": {
+    "docs": "node utilities/clearDocs.js && jsdoc -u tutorials -c utilities/docConfig.json",
+    "eslint": "eslint .",
+    "prepare": "husky install",
+    "prettier": "prettier --write .",
+    "test": "node tests/mediaTest.js"
+  },
+  "types": "./lib/types/index.d.ts",
+  "typesVersions": {
+    ">=4.2": {
+      "*": [
+        "*"
+      ]
+    }
+  },
+  "version": "1.9.0"
+}
